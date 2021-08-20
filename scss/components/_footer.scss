@@ -1,0 +1,58 @@
+.footer {
+	padding: 2.5rem 0;
+	color: $clr-light;
+	background: $bg-dark;
+
+	&__title {
+		text-align: center;
+		font-size: 2rem;
+
+		&::after {
+			content: "";
+			display: block;
+			height: 3px;
+			margin: 1rem 5rem 0;
+			background: $clr-ac-darkred;
+		}
+	}
+
+	&__social {
+		font-size: 3em;
+		display: flex;
+		flex-direction: row;
+		gap: 1.25rem;
+		margin: 0.5em auto;
+		width: fit-content;
+	}
+
+	&__links {
+		padding: 0.5em 0 2em;
+		text-align: center;
+		opacity: 1;
+	}
+
+	&__arr {
+		margin: 0.5em;
+	}
+
+	&__terms {
+		margin: 0.5em;
+	}
+}
+
+.info {
+	background: $bg-gray;
+	color: $clr-dark;
+	padding: 2rem 2rem 4rem;
+	max-width: 500px;
+	margin: 0 auto;
+
+	p {
+		opacity: 1;
+		font-size: 1.2rem;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+}

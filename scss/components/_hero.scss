@@ -1,0 +1,36 @@
+.hero {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	min-height: 400px;
+	height: calc(100vh - 4rem);
+	max-height: 1000px;
+	width: 100%;
+	background-color: $bg-gray;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../../img/hero_small.jpg);
+
+	&__box {
+		margin: 0 0 2rem 0;
+		padding: 0.5rem;
+	}
+
+	&__title,
+	&__subtitle {
+		text-align: center;
+		opacity: 0.75;
+		color: $clr-light;
+		margin: 0.5rem 0;
+	}
+
+	&__title {
+		font-size: clamp(25px, 10vw, 60px);
+		letter-spacing: 2px;
+	}
+
+	&__subtitle {
+		font-size: clamp(20px, 6vw, 35px);
+	}
+}

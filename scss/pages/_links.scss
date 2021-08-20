@@ -1,0 +1,39 @@
+.links {
+	& {
+		width: 100vw;
+		min-height: calc(100vh - 68px - 191px);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background: $bg-gray;
+	}
+
+	&__title {
+		font-size: 3rem;
+		padding: 0 0.75rem;
+		margin: 3rem 0 5rem;
+		border-bottom: 3px solid $clr-ac-darkred;
+		font-weight: bold;
+	}
+
+	&__ul {
+		height: fit-content;
+		width: fit-content;
+		display: grid;
+		gap: 1rem;
+		font-size: 2rem;
+		font-weight: bold;
+		margin-bottom: 5rem;
+
+		a {
+			display: block;
+			border: 2px solid $clr-ac-darkred;
+			background: $bg-light;
+			border-radius: 100vh;
+			padding: 0.75rem 2rem;
+			width: 200px;
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.intro {
+	&__frame {
+		overflow: hidden;
+		width: 90vw;
+		margin: 0 auto;
+		position: relative;
+	}
+	&__images {
+		display: flex;
+	}
+
+	&__btns {
+		position: absolute;
+		bottom: 3vw;
+		left: 0;
+
+		z-index: 10;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 6vw;
+	}
+
+	&__btn {
+		width: 5vw;
+		height: 5vw;
+		background: transparent;
+		border-radius: 100vh;
+		border: 2px solid rgba($clr-ac-darkred, 0.9);
+
+		&.active {
+			background: $bg-light;
+		}
+	}
+}

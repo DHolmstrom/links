@@ -1,0 +1,14 @@
+@keyframes nav__bar {
+	0% {
+		transform: scale(1);
+	}
+	5% {
+		transform: scale(1.2);
+	}
+	95% {
+		transform: scale(0.9);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

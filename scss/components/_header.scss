@@ -1,0 +1,127 @@
+header {
+	font-size: 2rem;
+	background: $bg-dark;
+	color: $clr-light;
+	padding: 2rem 2rem;
+	z-index: 100;
+}
+
+.brand__name {
+	font-size: 1.25em;
+	text-align: left;
+	letter-spacing: 2px;
+}
+
+.nav {
+	position: absolute;
+	visibility: hidden;
+	background-color: $bg-dark;
+	z-index: 99;
+	top: 6.5rem;
+	right: 1rem;
+	padding: 2rem 4rem 2.5rem 2rem;
+	width: 225px;
+
+	li {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	a {
+		float: left;
+		width: 100%;
+
+		span {
+			display: inline-block;
+			text-align: right;
+			margin-left: auto;
+		}
+	}
+
+	&.open {
+		visibility: visible;
+	}
+
+	&__ul {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		font-size: 2.5rem;
+
+		&.close:not(.nav__sub) {
+			display: none;
+		}
+	}
+
+	&__sub {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 2rem 5rem 2.5rem 2rem;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		transform: translateX(120%);
+		background: $bg-dark;
+		visibility: hidden;
+		pointer-events: none;
+
+		&.open {
+			transform: translateX(0%);
+			visibility: visible;
+			pointer-events: initial;
+		}
+	}
+
+	&__toggle {
+		position: absolute;
+		display: block;
+		top: 2em;
+		right: 1.5em;
+		width: 1.75em;
+		height: 1em;
+		display: grid;
+		align-content: center;
+		background-color: transparent;
+		border: none;
+
+		&:focus {
+			outline-offset: 5px;
+			outline-color: $clr-light;
+		}
+
+		&:hover {
+			animation: nav__bar;
+			animation-duration: 500ms;
+		}
+	}
+
+	&__bars {
+		width: 100%;
+		height: 0.3rem;
+		background: $clr-light;
+		border-radius: 100vh;
+
+		&::before,
+		&::after {
+			content: "";
+			border-radius: 100vh;
+			display: block;
+			height: 0.3rem;
+			background: $clr-light;
+		}
+
+		&::before {
+			transform: translateY(-7px);
+		}
+
+		&::after {
+			transform: translateY(4px);
+		}
+	}
+}
+
+.toprow {
+	font-size: 2rem;
+}
