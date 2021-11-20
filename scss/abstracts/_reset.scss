@@ -4,13 +4,22 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	@media (prefers-reduced-motion) {
+		transition: none !important;
+		-o-transition: none !important;
+		-moz-transition: none !important;
+		-webkit-transition: none !important;
+	}
 }
 
 html {
 	font-size: 10px;
+	font-family: "Montserrat", sans-serif;
 }
 
 body {
+	min-height: 100vh;
+
 	&.no__scroll {
 		height: 100vh;
 		overflow: hidden;
@@ -18,12 +27,25 @@ body {
 }
 
 section {
-	padding: 3rem clamp(1em, 5vw, 5em);
-	background: $bg-gray;
+	padding: 4rem clamp(1rem, 5vw, 5rem);
+	background: $bg-light;
+
+	&:nth-of-type(2n + 1) {
+		background-color: $bg-lightgray;
+	}
 }
 
-.section__title {
-	font-size: 2.5rem;
+.section {
+	&__title {
+		font-size: 3rem;
+		text-align: center;
+		padding: 0 0 2rem;
+	}
+}
+
+h1 {
+	font-family: "Dancing Script", cursive, "arial";
+	line-height: 1;
 }
 
 a {
@@ -44,4 +66,8 @@ ul {
 img {
 	max-width: 100%;
 	max-height: 100%;
+}
+
+textarea.no__resize {
+	resize: none;
 }

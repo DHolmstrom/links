@@ -4,7 +4,7 @@ const body = document.querySelector('body')
 
 let navState = false
 
-navBar.addEventListener('click', toggleNav)
+//navBar.addEventListener('click', toggleNav)
 
 function toggleNav() {
     if (navState == false) {
@@ -21,19 +21,19 @@ function toggleNav() {
 }
 
 
-function skickaMail(){
-    var email= document.getElementsByName('email').value;
+function skickaMail() {
+    var email = document.getElementsByName('email').value;
     var name = document.getElementsByName('name').value;
     var subject = document.getElementsByName('subject').value;
     var msg = document.getElementsByName('msg').value;
 
     msg = msg.replace(/\r?\n/g, '%0d%0a');
-  
+
     window.location.href = 'mailto:dennis@holmstrom.nu?subject=' + subject + '&body=' + msg + '%0d%0a%0d%0aHälsningar%0d%0a' + name + '%0d%0a' + email;
 }
 
 function openSubNav(subNav) {
-    subNav = document.querySelector('#'+subNav);
+    subNav = document.querySelector('#' + subNav);
     mainNav = document.querySelector('#nav--main');
     subNav.classList.add('open');
     mainNav.classList.add('close');
@@ -45,3 +45,23 @@ function closeSubNav() {
     openSubNav.classList.remove('open');
     mainNav.classList.remove('close');
 }
+
+const navVert = document.querySelector('.nav--vertical');
+
+function toggleVertNav() {
+    navVert.classList.toggle('closed')
+}
+
+const subNavs = document.querySelectorAll('.nav__sub__nav--expandable');
+const subNavBtns = document.querySelectorAll('.fa-chevron-down');
+
+for (let i = 0; i < subNavBtns.length; i++) {
+    subNavBtns[i].addEventListener('click', () => {
+        
+        subNavs[i].classList.toggle('open')
+        subNavBtns[i].classList.toggle('open');
+    })
+}
+
+
+

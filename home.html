@@ -10,31 +10,181 @@
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="toprow">
-            <h1 class="brand__name">Dennis Holmström</h1>
-        </div>   
+    <header class="header">
+        <h1 class="header__brand">
+            <a class="header__brand__link" href="/">
+                Dennis Holmström
+            </a>
+        </h1>
+        <nav class="main__nav">
+            <ul class="main__nav__list">
+                <li class="main__nav__list__item">
+                    <a href="index.html">
+                        Hem
+                    </a>
+                </li>
+                <li class="main__nav__list__item">
+                    <a href="">
+                        Album
+                    </a>
+                </li>
+                <li class="main__nav__list__item">
+                    <a href="index.html#om">
+                        Om
+                    </a>
+                </li>
+                <li class="main__nav__list__item">
+                    <a href="index.html#kontakt">
+                        Kontakt
+                    </a>
+                </li>
+                <li class="main__nav__list__item">
+                    <button class="btn">Logga in</button>
+                </li>
+            </ul>
+        </nav>
+        <button class="toggle__main__nav">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </button>
     </header>
 
     <main>
-        <section class="intro__slider">
-            <div class="intro__frame">
-                <div class="intro__images">
-                    <img id="img1" src="img/20210802DH0047.jpg" alt="">
-                    <img id="img2" src="img/20210802DH0060.jpg" alt="">
-                    <img id="img3" src="img/20210802DH0063.jpg" alt="">
-                    <img id="img4" src="img/20210802DH0085.jpg" alt="">
-                    <img id="img5" src="img/20210802DH0089.jpg" alt="">
-                </div>
-                <div class="intro__btns">
-                    <div id="img1" class="intro__btn active"></div>
-                    <div id="img2" class="intro__btn "></div>
-                    <div id="img3" class="intro__btn "></div>
-                    <div id="img4" class="intro__btn "></div>
-                    <div id="img5" class="intro__btn "></div>
-                </div>
+        <section class="hero">
+            <div class="hero__text">
+                <h3 class="hero__text__title">
+                    Dennis Holmström
+                </h3>
+                <h5 class="hero__text__subtitle">
+                    Fotograf | Programerare | Entreprenör
+                </h5>
+                <!--Detta syns inte så tydligt-->
             </div>
             
+            <div class="hero__info">
+                <article class="hero__info__links">
+                    <h6 class="hero__info__links__title">
+                        Om mig
+                    </h6>
+                    <p class="hero__info__links__info">
+                        Lär dig mer om mig och vad jag finner intresse i
+                    </p>
+                </article>
+                <article class="hero__info__links">
+                    <h6 class="hero__info__links__title">
+                        Fotografering
+                    </h6>
+                    <p class="hero__info__links__info">
+                        Titta på mina senaste bilder
+                    </p>
+                </article>
+                <article class="hero__info__links">
+                    <h6 class="hero__info__links__title">
+                        Kontakt
+                    </h6>
+                    <p class="hero__info__links__info">
+                        Här kan du kontakta mig om du har frågor eller är intresserad av att jobba med mig
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="about" id="om-mig">
+            <h3 class="about__title section__title">
+                Om mig 
+            </h3>
+            <p class="about__info">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos perferendis commodi perspiciatis. Sed ab consectetur porro excepturi deserunt aut asperiores vel dignissimos obcaecati eius! Cupiditate, perferendis cumque autem consequatur et aspernatur rem dolorum quisquam porro suscipit dolores atque deleniti quae magnam, iusto expedita debitis quia est laboriosam quod reiciendis. Ipsa aspernatur quos magni corrupti quidem nulla explicabo ad quis ratione minima itaque exercitationem, temporibus eligendi, ullam optio ipsam sint! Eum optio iure eligendi quam architecto voluptatum cumque odit impedit fugiat.
+            </p>
+            <img src="img/portätt.jpg" alt="En portätt bild på mig [Dennis Holmström]" class="about__img">
+        </section>
+        <section class="about__page">
+            <h3 class="about__page__title section__title">
+                Om hemsidan
+            </h3>
+            <p class="about__page__info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sequi magni maxime qui velit, tempora veritatis enim vitae assumenda, adipisci voluptatibus illum reprehenderit neque repudiandae aperiam nulla nisi, voluptates ratione saepe. Beatae praesentium dolorem doloremque alias sint quam? Nihil, nisi!
+            </p> 
+            <div class="about__page__grid">
+                <h4 class="about__page__grid__title">
+                    Använda programspråk
+                </h4>
+                <article class="about__page__griditem">
+                    <h6 class="about__page__griditem__title">
+                        HTML
+                    </h6>
+                    <p class="about__page__griditem__info">
+                        Används för att bestämma innehållet på hemsidan
+                    </p>
+                </article>
+                <article class="about__page__griditem">
+                    <h6 class="about__page__griditem__title">
+                        JavaScript
+                    </h6>
+                    <p class="about__page__griditem__info">
+                        Styr vad som händer när du interagerar med hemsidan.
+                    </p>
+                </article>
+                <article class="about__page__griditem">
+                    <h6 class="about__page__griditem__title">
+                        SCSS
+                    </h6>
+                    <p class="about__page__griditem__info">
+                        Används för att styra utseendet på hemsidan.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="kontakt" id="kontakt">
+            <form
+                action="" 
+                class="kontakt__form"
+                autocomplete="off">
+                <h3 class="section__title">
+                    Kontakt
+                </h3>
+                <div class="kontakt__form__group form__group">
+                    <input 
+                    class="kontakt__form__input form__input"
+                    type="text"
+                    name="namn"
+                    placeholder=""
+                    required="True">
+                    <label class="form__label" for="namn">Namn</label>
+                </div>
+                <div class="kontakt__form__group form__group">
+                    <input
+                        class="kontakt__form__input form__input"
+                        type="text"
+                        name="email"
+                        placeholder=""
+                        required="True">
+                    <label class="form__label" for="email">Email</label>
+                </div>
+                <div class="kontakt__form__group form__group">
+                    <input
+                        class="kontakt__form__input form__input"
+                    type="text"
+                    name="amne"
+                    placeholder=""
+                    required="True">
+                    <label class="form__label" for="amne">Ämne</label>
+                </div>
+                <div class="kontakt__form__group form__group">
+                    <textarea
+                        class="kontakt__form__input form__input no__resize"
+                        name="meddelande" 
+                        cols="30" 
+                        rows="10"
+                        placeholder=""
+                        required="True"
+                        
+                    ></textarea>
+                    <label class="form__label" for="meddelande">Meddelande</label>
+                </div>
+                <div class="kontakt__form__group form__group">
+                    <input class="form__input" type="button" value="Skicka">
+                </div>
+            </form>
         </section>
     </main>
 

@@ -1,36 +1,57 @@
 .hero {
-	display: grid;
-	align-content: center;
-	justify-content: center;
-	min-height: 400px;
-	height: calc(100vh - 4rem);
-	max-height: 1000px;
-	width: 100%;
-	background-color: $bg-gray;
-	background-size: cover;
+	height: calc(100vh - 80px);
+	position: relative;
+	background-image: url("../img/20211103DH1056.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-image: url(../../img/hero_small.jpg);
+	background-size: cover;
 
-	&__box {
-		margin: 0 0 2rem 0;
-		padding: 0.5rem;
-	}
-
-	&__title,
-	&__subtitle {
-		text-align: center;
+	&__text {
+		position: absolute;
+		top: 40%;
+		left: 20%;
+		margin: 2rem;
 		opacity: 0.75;
-		color: $clr-light;
-		margin: 0.5rem 0;
+		background: rgba($bg-lightgray, 0.75);
+		box-shadow: $box-shadow;
+		padding: 2rem;
+
+		&__title {
+			font-size: 3rem;
+			padding: 1rem 0;
+		}
+
+		&__subtitle {
+			font-size: 2rem;
+			padding: 1rem 0 2rem;
+		}
 	}
 
-	&__title {
-		font-size: clamp(25px, 10vw, 60px);
-		letter-spacing: 2px;
-	}
+	&__info {
+		position: absolute;
+		bottom: 2rem;
+		display: none;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 4rem;
+		margin: 4rem;
+		opacity: 0.75;
+		display: none;
+		box-shadow: $box-shadow;
 
-	&__subtitle {
-		font-size: clamp(20px, 6vw, 35px);
+		&__links {
+			background: $bg-lightgray;
+			padding: 3rem 2rem;
+			border: 2px solid #000;
+
+			&__title {
+				font-size: 2.25rem;
+				padding-bottom: 1.5rem;
+				border-bottom: 4px solid #000;
+			}
+
+			&__info {
+				padding: 1rem 0;
+			}
+		}
 	}
 }
