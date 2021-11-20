@@ -473,6 +473,8 @@ textarea.no__resize {
     display: flex;
     flex-direction: row;
     position: initial;
+    padding: 0;
+    height: fit-content;
   }
   .toggle__main__nav {
     display: none;
@@ -556,7 +558,8 @@ textarea.no__resize {
 .albums__grid {
   padding: 0 2rem;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+  gap: 2rem;
 }
 
 .album {
