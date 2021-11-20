@@ -16,10 +16,11 @@
 		max-height: calc(100vh - 80px);
 
 		&__title {
-			border-bottom: 2px solid #000;
-			padding: 1rem;
+			border-bottom: 3px solid $clr-ac-darkred;
+			padding: 0.5rem;
 			text-align: center;
-			margin-bottom: 4rem;
+			max-width: 250px;
+			margin: 1rem auto;
 		}
 	}
 
@@ -30,12 +31,13 @@
 		justify-content: space-evenly;
 		gap: 1rem;
 		font-size: 2rem;
+		padding-top: 2rem;
 
 		a {
 			padding: 1rem;
 			width: 225px;
 			text-align: center;
-			border: 1px solid #000;
+			border: 2px solid $clr-ac-darkred;
 			border-radius: 100vh;
 		}
 	}

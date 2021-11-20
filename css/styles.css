@@ -195,11 +195,12 @@ textarea.no__resize {
 
 .hero__text {
   position: absolute;
-  top: 40%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: 2rem;
   opacity: 0.75;
-  background: rgba(170, 169, 169, 0.75);
+  background: rgba(170, 169, 169, 0.9);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   padding: 2rem;
 }
@@ -497,10 +498,11 @@ textarea.no__resize {
 }
 
 .links__section__title {
-  border-bottom: 2px solid #000;
-  padding: 1rem;
+  border-bottom: 3px solid #9e1515;
+  padding: 0.5rem;
   text-align: center;
-  margin-bottom: 4rem;
+  max-width: 250px;
+  margin: 1rem auto;
 }
 
 .links__ul {
@@ -510,13 +512,14 @@ textarea.no__resize {
   justify-content: space-evenly;
   gap: 1rem;
   font-size: 2rem;
+  padding-top: 2rem;
 }
 
 .links__ul a {
   padding: 1rem;
   width: 225px;
   text-align: center;
-  border: 1px solid #000;
+  border: 2px solid #9e1515;
   border-radius: 100vh;
 }
 

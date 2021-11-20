@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" defer></script>
+    <script src="js/links.js" defer></script>
 </head>
 <body>
     <div class="links__container">
@@ -19,54 +20,24 @@
             </h1>
         </header>
         <section class="links__section">
-            <h3 class="section__title">Länkar</h3>
+            <h3 class="links__section__title section__title">Länkar</h3>
             <ul class="links__ul"></ul>
         </section>
     </div>
-    <script>
-        const links__ul = document.querySelector('.links__ul')
-        const links = [
-            {
-                Namn: 'Senaste album',
-                Länk: 'https://photos.app.goo.gl/wLkkFaUmLN5XhW9B7'
-            },
-            {
-                Namn: 'Home',
-                Länk: 'home.html'
-            },
-            {
-                Namn: 'Instagram',
-                Länk: 'http://www.instagram.com/holmstrom_dennis'
-            },
-        ];
-        links.forEach(link => {
-            var aText = document.createTextNode(link.Namn)
-            var a = document.createElement('a')
-            a.appendChild(aText)
-            a.href = link.Länk
-            links__ul.appendChild(a)
-        });
-    </script>
     <footer class="footer">
         <h2 class="footer__title">© Dennis Holmström</h2>
         <div class="footer__social">
-            <a class="social__link" href="">
-                <i class="fab fa-facebook-square"></i>
-            </a>
-            <a class="social__link" href="">
+            <a class="social__link" href="https://www.instagram.com/holmstrom_dennis/">
                 <i class="fab fa-instagram-square"></i>
             </a>
             <a class="social__link" href="mailto:dennis@holmstrom.nu">
                 <i class="fas fa-envelope-open"></i>
             </a>
-            <a class="social__link" href="tel:+46705679140">
-                <i class="fas fa-phone"></i>
-            </a>
         </div>
         <p class="footer__links">
             <span class="footer__arr">All Rights Reserved</span>
             |
-            <a class="footer__terms" href="/vilkor">Allmänna vilkor</a>
+            <a class="footer__terms" href="#">Allmänna vilkor</a>
         </p>
     </footer>
     <div class="info">

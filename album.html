@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hem | Dennis Holmström</title>
+    <title>Album | Dennis Holmström</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" defer></script>
+    <script src="js/album.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -54,76 +55,26 @@
                 Alla album
             </h3>
             <div class="albums__grid"></div>
-            <script>
-                const albumsGrid = document.querySelector('.albums__grid')
-
-                const albums = [
-                    {
-                        Länk: 'https://photos.app.goo.gl/wLkkFaUmLN5XhW9B7',
-                        Image: 'img/20211118DH1466.jpg',
-                        Titel: 'Kungälv - Mölndal',
-                        Info: 'J18 division 1 | 20201118'
-                    },
-                    {
-                        Länk: 'https://photos.app.goo.gl/6dZ2YYw8K1ZHnNek9',
-                        Image: 'img/20211114DH1475.jpg',
-                        Titel: 'Hanhals - Kungälv',
-                        Info: 'J18 division 1 | 20201114'
-                    },
-                    {
-                        Länk: 'https://photos.app.goo.gl/9TpTX1JrwcgpgC3r8',
-                        Image: 'img/20211111DH1324.jpg',
-                        Titel: 'Grästorp - Kungälv',
-                        Info: 'J18 division 1 | 20201111'
-                    },
-                    {
-                        Länk: 'https://photos.app.goo.gl/npu6YBSo5e3ZnSiy9',
-                        Image: 'img/20211103DH2533.jpg',
-                        Titel: 'Hisingen - Uddevalla',
-                        Info: 'J18 division 1 | 20201103'
-                    },
-    
-                ];
-                albums.forEach(album => {
-                    var albumCoverImg = document.createElement('img')
-                    albumCoverImg.src = album.Image
-                    var albumCoverTitle = document.createElement('h6')
-                    albumCoverTitle.classList.add('album__title')
-                    albumCoverTitle.appendChild(document.createTextNode(album.Titel))
-                    var albumCoverInfo = document.createElement('p')
-                    albumCoverInfo.appendChild(document.createTextNode(album.Info))
-                    var albumCoverA = document.createElement('a')
-                    albumCoverA.href = album.Länk
-                    albumCoverA.target = '_blank'
-                    albumCoverA.classList.add('album')
-                    albumCoverA.appendChild(albumCoverImg)
-                    albumCoverA.appendChild(albumCoverTitle)
-                    albumCoverA.appendChild(albumCoverInfo)
-                    albumsGrid.appendChild(albumCoverA)
-                });
-            </script>
         </section>
     </main>
     <footer class="footer"> 
         <h2 class="footer__title">© Dennis Holmström</h2>
         <div class="footer__social">
-            <a class="social__link" href="">
-                <i class="fab fa-facebook-square"></i>
-            </a>
-            <a class="social__link" href="">
+            <a class="social__link" href="https://www.instagram.com/holmstrom_dennis/">
                 <i class="fab fa-instagram-square"></i>
             </a>
             <a class="social__link" href="mailto:dennis@holmstrom.nu">
                 <i class="fas fa-envelope-open"></i>
             </a>
-            <a class="social__link" href="tel:+46705679140">
-                <i class="fas fa-phone"></i>
-            </a>
         </div>
         <p class="footer__links">
-            <span class="footer__arr">All Rights Reserved</span>
+            <span class="footer__arr">
+                All Rights Reserved
+            </span>
             |
-            <a class="footer__terms" href="/vilkor">Allmänna vilkor</a>
+            <a class="footer__terms" href="#">
+                Allmänna vilkor
+            </a>
         </p>
     </footer>
     <div class="info">
