@@ -22,6 +22,7 @@
 
 			.fa-times {
 				display: block;
+				padding: 0 1.75rem;
 			}
 		}
 	}
@@ -41,11 +42,26 @@
 		gap: 5rem 1.2rem;
 		font-size: 1.5rem;
 		padding: 6rem 0;
-		background: rgba($bg-gray, 0.75);
+		background: rgba($bg-gray, 0.9);
 		font-size: 2.5rem;
 
 		&__item {
-			padding: 1rem;
+			padding: 0 1rem;
+			border-bottom: 3px solid transparent;
+
+			&:hover,
+			&.active {
+				border-bottom: 3px solid $clr-ac-darkred;
+			}
+
+			&:last-of-type {
+				border-bottom: 3px solid transparent;
+			}
+
+			& > .btn {
+				background: rgba($clr-light, 0.75);
+				border: 2px solid $clr-ac-darkred;
+			}
 		}
 	}
 }

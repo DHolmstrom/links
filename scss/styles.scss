@@ -1,15 +1,18 @@
 @import "./abstracts/variabels";
+@import "./abstracts/mixins";
 @import "./abstracts/keyframes";
 @import "./abstracts/reset";
 
+@import "./components/buttons";
 @import "./components/header";
-
 @import "./components/hero";
 @import "./components/portfolio";
 @import "./components/about";
 @import "./components/forms";
 @import "./components/contact";
 @import "./components/footer";
+@import "./components/responsive";
 
 @import "./pages/links";
 @import "./pages/home";
+@import "./pages/about";

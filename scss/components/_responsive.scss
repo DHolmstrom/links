@@ -1,0 +1,25 @@
+@media screen and (min-width: 768px) {
+	.hero {
+		&__text {
+			top: 20%;
+		}
+
+		&__info {
+			display: grid;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.main__nav {
+		&__list {
+			visibility: visible;
+			display: flex;
+			flex-direction: row;
+			position: initial;
+		}
+	}
+	.toggle__main__nav {
+		display: none;
+	}
+}
