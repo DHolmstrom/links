@@ -19,6 +19,7 @@ html {
 
 body {
 	min-height: 100vh;
+	min-width: 300px;
 
 	&.open_nav {
 		height: 100vh;

@@ -1,7 +1,7 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 768px) {
 	.hero {
 		&__text {
-			top: 20%;
+			top: 25%;
 		}
 
 		&__info {
@@ -23,5 +23,14 @@
 	}
 	.toggle__main__nav {
 		display: none;
+	}
+	.about {
+		display: grid;
+		place-items: center;
+		grid-template-columns: repeat(2, 1fr);
+
+		&__info {
+			padding: 2rem 0;
+		}
 	}
 }
