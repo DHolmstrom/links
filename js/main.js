@@ -77,8 +77,12 @@ const links = [
         Länk: 'album.html'
     },
     {
-        Namn: 'Instagram',
+        Namn: 'Vanlig instagram',
         Länk: 'http://www.instagram.com/holmstrom_dennis/'
+    },
+    {
+        Namn: 'Foto instagram',
+        Länk: 'https://www.instagram.com/dennisholmstromfoto/'
     },
 ];
 
