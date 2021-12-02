@@ -65,10 +65,6 @@ if (albumsGrid) {
 
 const links = [
     {
-        Namn: 'Senaste album',
-        Länk: albums[0].Länk
-    },
-    {
         Namn: 'Home',
         Länk: 'home.html'
     },
@@ -77,11 +73,11 @@ const links = [
         Länk: 'album.html'
     },
     {
-        Namn: 'Vanlig instagram',
-        Länk: 'http://www.instagram.com/holmstrom_dennis/'
+        Namn: 'Senaste album',
+        Länk: albums[0].Länk
     },
     {
-        Namn: 'Foto instagram',
+        Namn: 'Instagram',
         Länk: 'https://www.instagram.com/dennisholmstromfoto/'
     },
 ];
