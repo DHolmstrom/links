@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfölj | Dennis Holmström</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Album | Dennis Holmström</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" defer></script>
+    <script src="js/portfolio.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -49,11 +59,46 @@
         </button>
     </header>
     <main>
-        <section class="albums">
+        <section class="portfolio">
             <h3 class="section__title">
-                Alla album
+                Mina favoritbilder
             </h3>
-            <div class="albums__grid"></div>
+            <p class="section__info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo in vero sequi facilis porro fugit aut, beatae magni atque ab voluptate, consequatur inventore quis numquam excepturi, facere architecto cupiditate sit!
+            </p>
+            <div class="portfolio__select">
+                <label for="Group">Välj bilder</label>
+                <br>
+                <ul class="portfolio__ul" id="portfolioSelector">
+
+                </ul>
+            </div>
+            <div class="portfolio__grid" id="portfoliogrid">
+                <a class="portfolio__griditem" href="" aria-label="hockey">
+                    <img src="img/20211103DH1056.jpg" alt="">
+                </a>
+                <a class="portfolio__griditem" href="" aria-label="natur">
+                    <img src="img/20211103DH2533.jpg" alt="">
+                </a>
+                <a class="portfolio__griditem" href="" aria-label="hockey">
+                    <img src="img/20211111DH1324.jpg" alt="">
+                </a>
+                <a class="portfolio__griditem" href="" aria-label="fordon">
+                    <img src="img/20211114DH1475.jpg" alt="">
+                </a>
+                <a class="portfolio__griditem" href="" aria-label="hockey">
+                    <img src="img/20211103DH1056.jpg" alt="">
+                </a>
+                <a class="portfolio__griditem" href="" aria-label="natur">
+                    <img src="img/20211103DH2533.jpg" alt="">
+                </a>
+                <a class="portfolio__griditem" href="" aria-label="hockey">
+                    <img src="img/20211111DH1324.jpg" alt="">
+                </a>
+                <a class="portfolio__griditem" href=""  aria-label="fordon">
+                    <img src="img/20211114DH1475.jpg" alt="">
+                </a>
+            </div>
         </section>
     </main>
     <footer class="footer"> 
@@ -79,5 +124,7 @@
     <div class="info">
         <p>Denna hemsida är inte helt färdigställd och saker kanske inte fungerar precis som tänkt. Om du hittar ett problem på sidan kan du skicka ett mail till <a href="mailto:dennis@holmstrom.nu?subject=Fel på hemsidan">dennis@holmstrom.nu</a> </p>
     </div>
+</body>
+</html>
 </body>
 </html>

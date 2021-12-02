@@ -494,7 +494,13 @@ textarea.no__resize {
     grid-template-columns: repeat(2, 1fr);
   }
   .about__info {
-    padding: 2rem 0;
+    padding: 2rem 0 2rem 4rem;
+    text-align: left;
+  }
+  .about__img {
+    margin: 0 auto 0 8rem;
+    height: 400px;
+    width: 500px;
   }
 }
 
@@ -598,5 +604,27 @@ textarea.no__resize {
 .album__title {
   padding-top: 1.5rem;
   font-size: 2.25rem;
+}
+
+.portfolio__grid {
+  --portfolioGridColumns: 4;
+  margin: 0 auto;
+  width: fit-content;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(var(--portfolioGridColumns), 300px);
+  gap: 2rem;
+  background: rgba(153, 153, 153, 0.2);
+  padding: 2rem;
+}
+
+.portfolio__griditem {
+  display: none;
+  place-items: center;
+  height: 300px;
+}
+
+.portfolio__griditem.active {
+  display: grid;
 }
 /*# sourceMappingURL=styles.css.map */

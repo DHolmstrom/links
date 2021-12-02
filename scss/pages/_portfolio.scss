@@ -1,0 +1,23 @@
+.portfolio {
+	&__grid {
+		--portfolioGridColumns: 4;
+		margin: 0 auto;
+		width: fit-content;
+		display: grid;
+		place-items: center;
+		grid-template-columns: repeat(var(--portfolioGridColumns), 300px);
+		gap: 2rem;
+		background: rgba($bg-gray, 0.2);
+		padding: 2rem;
+
+		&item {
+			display: none;
+			place-items: center;
+			height: 300px;
+
+			&.active {
+				display: grid;
+			}
+		}
+	}
+}

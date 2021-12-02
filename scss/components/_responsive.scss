@@ -30,7 +30,14 @@
 		grid-template-columns: repeat(2, 1fr);
 
 		&__info {
-			padding: 2rem 0;
+			padding: 2rem 0 2rem 4rem;
+			text-align: left;
+		}
+
+		&__img {
+			margin: 0 auto 0 8rem;
+			height: 400px;
+			width: 500px;
 		}
 	}
 }
