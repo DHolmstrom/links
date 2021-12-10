@@ -1,6 +1,12 @@
 //Albums JSON
 const albums = [
     {
+        Länk: 'https://photos.app.goo.gl/tdQPKP8BKzMQDvru6',
+        Image: 'img/',
+        Titel: 'Skärgården - Hisingen',
+        Info: 'J18 division 2 | 202011210'
+    },
+    {
         Länk: 'https://photos.app.goo.gl/wLkkFaUmLN5XhW9B7',
         Image: 'img/20211118DH1466.jpg',
         Titel: 'Kungälv - Mölndal',
