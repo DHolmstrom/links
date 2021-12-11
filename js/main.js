@@ -2,7 +2,7 @@
 const albums = [
     {
         Länk: 'https://photos.app.goo.gl/tdQPKP8BKzMQDvru6',
-        Image: 'img/',
+        Image: 'img\20211210185323_D50_6735.jpg',
         Titel: 'Skärgården - Hisingen',
         Info: 'J18 division 2 | 202011210'
     },
