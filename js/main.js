@@ -1,6 +1,12 @@
 //Albums JSON
 const albums = [
     {
+        Länk: 'https://photos.app.goo.gl/5sS37L9ChaWbNVLaA',
+        Image: '',
+        Titel: 'Kungälv - Västervik',
+        Info: 'J18 Ettan | 202011212'
+    },
+    {
         Länk: 'https://photos.app.goo.gl/tdQPKP8BKzMQDvru6',
         Image: 'img/20211210185323_D50_6735.jpg',
         Titel: 'Skärgården - Hisingen',
