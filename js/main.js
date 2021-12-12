@@ -2,7 +2,7 @@
 const albums = [
     {
         Länk: 'https://photos.app.goo.gl/5sS37L9ChaWbNVLaA',
-        Image: '',
+        Image: 'img/20211212kungalvvastervikj18ettan.jpg',
         Titel: 'Kungälv - Västervik',
         Info: 'J18 Ettan | 202011212'
     },
