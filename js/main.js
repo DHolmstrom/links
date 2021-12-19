@@ -1,6 +1,12 @@
 //Albums JSON
 const albums = [
     {
+        Länk: 'https://photos.app.goo.gl/fcavRyLiJbFRJ6Np6',
+        Image: 'img/20211219145635070_Kungälv-Mölndal-HockeyTvåan_D50.jpg',
+        Titel: 'Kungälv - Mölndal',
+        Info: 'Hockeytvåan | 202011219'
+    },
+    {
         Länk: 'https://photos.app.goo.gl/5sS37L9ChaWbNVLaA',
         Image: 'img/20211212kungalvvastervikj18ettan.jpg',
         Titel: 'Kungälv - Västervik',
