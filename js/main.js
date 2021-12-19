@@ -4,43 +4,43 @@ const albums = [
         Länk: 'https://photos.app.goo.gl/fcavRyLiJbFRJ6Np6',
         Image: 'img/20211219145635070_Kungälv-Mölndal-HockeyTvåan_D50.jpg',
         Titel: 'Kungälv - Mölndal',
-        Info: 'Hockeytvåan | 202011219'
+        Info: 'Hockeytvåan | 20211219'
     },
     {
         Länk: 'https://photos.app.goo.gl/5sS37L9ChaWbNVLaA',
         Image: 'img/20211212kungalvvastervikj18ettan.jpg',
         Titel: 'Kungälv - Västervik',
-        Info: 'J18 Ettan | 202011212'
+        Info: 'J18 Ettan | 20211212'
     },
     {
         Länk: 'https://photos.app.goo.gl/tdQPKP8BKzMQDvru6',
         Image: 'img/20211210185323_D50_6735.jpg',
         Titel: 'Skärgården - Hisingen',
-        Info: 'J18 division 2 | 202011210'
+        Info: 'J18 division 2 | 20211210'
     },
     {
         Länk: 'https://photos.app.goo.gl/wLkkFaUmLN5XhW9B7',
         Image: 'img/20211118DH1466.jpg',
         Titel: 'Kungälv - Mölndal',
-        Info: 'J18 division 1 | 20201118'
+        Info: 'J18 division 1 | 2021118'
     },
     {
         Länk: 'https://photos.app.goo.gl/6dZ2YYw8K1ZHnNek9',
         Image: 'img/20211114DH1475.jpg',
         Titel: 'Hanhals - Kungälv',
-        Info: 'J18 division 1 | 20201114'
+        Info: 'J18 division 1 | 2021114'
     },
     {
         Länk: 'https://photos.app.goo.gl/9TpTX1JrwcgpgC3r8',
         Image: 'img/20211111DH1324.jpg',
         Titel: 'Grästorp - Kungälv',
-        Info: 'J18 division 1 | 20201111'
+        Info: 'J18 division 1 | 2021111'
     },
     {
         Länk: 'https://photos.app.goo.gl/npu6YBSo5e3ZnSiy9',
         Image: 'img/20211103DH2533.jpg',
         Titel: 'Hisingen - Uddevalla',
-        Info: 'J18 division 1 | 20201103'
+        Info: 'J18 division 1 | 2021103'
     },
 ];
 
