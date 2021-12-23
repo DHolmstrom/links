@@ -25,10 +25,6 @@
 	transition: all 250ms linear;
 }
 
-.form__input:required:valid {
-	border: 2px solid red;
-}
-
 .form__input:required:valid + .form__label,
 .form__group:focus-within .form__label {
 	transform: translateY(-20px);

@@ -98,6 +98,10 @@ const links = [
         Namn: 'Instagram',
         Länk: 'https://www.instagram.com/dennisholmstromfoto/'
     },
+    {
+        Namn: 'Kontakt',
+        Länk: 'home.html#kontakt'
+    },
 ];
 
 const links__ul = document.querySelector('.links__ul')

@@ -33,11 +33,11 @@
                         Om
                     </a>
                 </li>
-                <!-- <li class="main__nav__list__item">
+                <li class="main__nav__list__item">
                     <a href="home.html#kontakt">
                         Kontakt
                     </a>
-                </li> -->
+                </li>
                 <!-- <li class="main__nav__list__item">
                     <button class="btn btn--long">Logga in</button>
                 </li> -->
@@ -145,7 +145,7 @@
                 </article>
             </div>
         </section>
-        <!-- <section class="kontakt" id="kontakt">
+        <section class="kontakt" id="kontakt">
             <form
                 action="" 
                 class="kontakt__form"
@@ -174,10 +174,10 @@
                 <div class="kontakt__form__group form__group">
                     <input
                         class="kontakt__form__input form__input"
-                    type="text"
-                    name="amne"
-                    placeholder=""
-                    required="True">
+                        type="text"
+                        name="amne"
+                        placeholder=""
+                        required="True">
                     <label class="form__label" for="amne">Ämne</label>
                 </div>
                 <div class="kontakt__form__group form__group">
@@ -188,15 +188,42 @@
                         rows="10"
                         placeholder=""
                         required="True"
-                        
                     ></textarea>
                     <label class="form__label" for="meddelande">Meddelande</label>
                 </div>
                 <div class="kontakt__form__group form__group">
-                    <input class="form__input" type="button" value="Skicka">
+                    <input onclick="SendEmail()" class="form__input" type="button" value="Skicka">
                 </div>
             </form>
-        </section> -->
+        </section>
+        <script>
+            function SendEmail() {
+                var namn = document.getElementsByName("namn")[0].value
+                var email = document.getElementsByName("email")[0].value
+                var ämne = document.getElementsByName("amne")[0].value
+                var meddelande = document.getElementsByName("meddelande")[0].value
+                meddelande = meddelande.replace(/\r\n|\r|\n/g, "%0D%0A")
+
+                if (namn == ''){
+                    alert("Fyll i ditt namn")
+                    return 
+                }
+                if (email == ''){
+                    alert("Fyll i din email")
+                    return 
+                }
+                if (ämne == ''){
+                    alert("Fyll i ett ämne")
+                    return 
+                }
+                if (meddelande == ''){
+                    alert("Skriv ett meddelande")
+                    return 
+                }
+                    
+                window.open('mailto:dennis@holmstrom.nu?cc=' + email + '&subject=' + ämne + '&body=' + meddelande);
+            }
+        </script>
     </main>
 
     <footer class="footer"> 
