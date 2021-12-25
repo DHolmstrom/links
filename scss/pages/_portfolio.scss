@@ -11,13 +11,9 @@
 		padding: 2rem;
 
 		&item {
-			display: none;
+			display: grid;
 			place-items: center;
 			height: 300px;
-
-			&.active {
-				display: grid;
-			}
 		}
 	}
 }

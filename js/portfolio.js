@@ -1,96 +1,69 @@
 var portfoiloItems = [
     {
         Image: 'img/20211103DH1056.jpg',
-        Label: 'Hockey',
+        Label: ['Hockey'],
     },
     {
         Image: 'img/20211103DH1056.jpg',
-        Label: 'Hockey',
+        Label: ['Hockey'],
     },
     {
         Image: 'img/20211103DH1056.jpg',
-        Label: 'Hockey',
+        Label: ['Hockey'],
     },
     {
         Image: 'img/20211103DH2533.jpg',
-        Label: 'Natur',
+        Label: ['Natur'],
     },
     {
         Image: 'img/20211103DH2533.jpg',
-        Label: 'Natur',
+        Label: ['Natur'],
     },
     {
         Image: 'img/20211103DH1056.jpg',
-        Label: 'Hockey',
+        Label: ['Hockey','Sport'],
     },
     {
         Image: 'img/20211103DH2533.jpg',
-        Label: 'Natur',
+        Label: ['Natur'],
     },
     {
         Image: 'img/20211103DH2533.jpg',
-        Label: 'Natur',
+        Label: ['Natur'],
     }
 ];
 
-createSelectorLi("Alla bilder", "")
+const portfolioGrid = document.querySelector('#portfoliogrid')
 
-var loadedPortfoiloItems = [];
+function LoadPortfolio () {
+    portfolioGrid.innerHTML = ''
+    var portfolioSelect = document.querySelector('#portfolio__select')
 
-portfoiloItems.forEach(item => {
-    var portfoiloGrid = document.getElementById('portfoliogrid')
-    var portfolioItem = document.createElement('a')
-    portfolioItem.classList.add('portfolio__griditem')
-    portfolioItem.setAttribute("aria-label", item.Label.toLowerCase())
-    var portfolioItemImg = document.createElement('img')
-    portfolioItemImg.src = item.Image
-    portfolioItem.appendChild(portfolioItemImg)
-    portfoiloGrid.appendChild(portfolioItem)
-
-    if (loadedPortfoiloItems.includes(item.Label)) return
-
-    createSelectorLi(item.Label, item.Label.toLowerCase())
-
-    loadedPortfoiloItems.push(item.Label)
-})
-
-
-function createSelectorLi (text, ariaLabel) {
-    var portfoiloSelector = document.getElementById('portfolioSelector')
-    var portfoiloSelectorItem = document.createElement('li')
-    var portfolioselectorItemText = document.createTextNode(text)
-    portfoiloSelectorItem.setAttribute('onclick', 'portfolioselect("' + ariaLabel + '")')
-    portfoiloSelectorItem.appendChild(portfolioselectorItemText)
-
-    portfoiloSelector.appendChild(portfoiloSelectorItem)
-}
-
-
-
-const portfolioGriditems = document.querySelectorAll('.portfolio__griditem')
-selectImages(portfolioGriditems)
-
-function portfolioselect(value) {
-    
-    if(value == "") {
-        selectImages(portfolioGriditems)
-        return
+    loadAll = false
+    if (portfolioSelect.value == 'Alla') {
+        loadAll = true
     }
-    clearAllImages()
-    var newPortfolioItems = document.querySelectorAll('.portfolio__griditem[aria-label="' + value + '"]')
-    selectImages(newPortfolioItems)
+
+    portfoiloItems.forEach(item => {
+        
+        hasLabel = false
+    
+        item.Label.forEach(label => {
+            if (label == portfolioSelect.value) {
+                hasLabel = true;
+            }
+        }) 
+        
+        if (hasLabel == true || loadAll == true) {
+            var FullImg = document.createElement('a')
+            FullImg.classList.add('portfolio__griditem')
+            FullImg.href = item.Image
+            var img = document.createElement('img')
+            img.src = item.Image
+            FullImg.appendChild(img)
+            portfolioGrid.appendChild(FullImg)
+        }
+    })
 }
 
-function selectImages(items) {
-    items.forEach(item => {
-        item.classList.add('active')
-    });
-}
-
-function clearAllImages() {
-    const portfolioGriditems = document.querySelectorAll('.portfolio__griditem.active')
-
-    portfolioGriditems.forEach(item => {
-        item.classList.remove('active')
-    });
-}
+LoadPortfolio()

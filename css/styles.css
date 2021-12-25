@@ -612,12 +612,8 @@ textarea.no__resize {
 }
 
 .portfolio__griditem {
-  display: none;
+  display: grid;
   place-items: center;
   height: 300px;
-}
-
-.portfolio__griditem.active {
-  display: grid;
 }
 /*# sourceMappingURL=styles.css.map */

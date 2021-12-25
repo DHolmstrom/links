@@ -60,35 +60,15 @@
             <div class="portfolio__select">
                 <label for="Group">Välj bilder</label>
                 <br>
-                <ul class="portfolio__ul" id="portfolioSelector">
-
-                </ul>
+                <select id="portfolio__select" onchange="LoadPortfolio()">
+                    <option value="Alla">Alla bilder</option>
+                    <option value="Hockey">Hockey</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Natur">Natur</option>
+                </select>
             </div>
             <div class="portfolio__grid" id="portfoliogrid">
-                <a class="portfolio__griditem" href="" aria-label="hockey">
-                    <img src="img/20211103DH1056.jpg" alt="">
-                </a>
-                <a class="portfolio__griditem" href="" aria-label="natur">
-                    <img src="img/20211103DH2533.jpg" alt="">
-                </a>
-                <a class="portfolio__griditem" href="" aria-label="hockey">
-                    <img src="img/20211111DH1324.jpg" alt="">
-                </a>
-                <a class="portfolio__griditem" href="" aria-label="fordon">
-                    <img src="img/20211114DH1475.jpg" alt="">
-                </a>
-                <a class="portfolio__griditem" href="" aria-label="hockey">
-                    <img src="img/20211103DH1056.jpg" alt="">
-                </a>
-                <a class="portfolio__griditem" href="" aria-label="natur">
-                    <img src="img/20211103DH2533.jpg" alt="">
-                </a>
-                <a class="portfolio__griditem" href="" aria-label="hockey">
-                    <img src="img/20211111DH1324.jpg" alt="">
-                </a>
-                <a class="portfolio__griditem" href=""  aria-label="fordon">
-                    <img src="img/20211114DH1475.jpg" alt="">
-                </a>
+                
             </div>
         </section>
     </main>
