@@ -1,19 +1,26 @@
 .portfolio {
 	&__grid {
-		--portfolioGridColumns: 4;
-		margin: 0 auto;
-		width: fit-content;
-		display: grid;
-		place-items: center;
-		grid-template-columns: repeat(var(--portfolioGridColumns), 300px);
-		gap: 2rem;
 		background: rgba($bg-gray, 0.2);
 		padding: 2rem;
+		display: flex;
+		flex-wrap: wrap;
 
+		&::after {
+			content: "";
+			flex-grow: 999999999;
+		}
 		&item {
-			display: grid;
-			place-items: center;
-			height: 300px;
+			$imageHeight: 300px;
+			height: $imageHeight;
+			margin: 2.5px;
+			flex-wrap: 1;
+
+			img {
+				height: $imageHeight;
+				max-width: 100%;
+				max-height: 100%;
+				object-fit: cover;
+			}
 		}
 	}
 }
