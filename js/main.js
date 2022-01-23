@@ -1,12 +1,6 @@
 //Albums JSON
 const albums = [
     {
-        Länk: 'https://photos.app.goo.gl/pGRgS7Lm49792ScFA',
-        Image: '',
-        Titel: 'Bäcken - Kungälv',
-        Info: 'J18Ettan | 20220123'
-    },
-    {
         Länk: 'https://photos.app.goo.gl/nQygrbxx54zLYNsT8',
         Image: 'img/20220116-KIK-BHC-J18Ettan-DH5_1095.jpg',
         Titel: 'Kungälv - Bäcken',
