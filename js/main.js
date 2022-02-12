@@ -1,6 +1,12 @@
 //Albums JSON
 const albums = [
     {
+        Länk: 'https://photos.app.goo.gl/iDxJNS6T4e21Umb69',
+        Image: 'img/20220205-Hockey-KIK-IFM-U161-DH5_2205.jpg',
+        Titel: 'Kungälv - Mölndal',
+        Info: 'U16 division 1 | 20220205'
+    },
+    {
         Länk: 'https://photos.app.goo.gl/nQygrbxx54zLYNsT8',
         Image: 'img/20220116-KIK-BHC-J18Ettan-DH5_1095.jpg',
         Titel: 'Kungälv - Bäcken',
