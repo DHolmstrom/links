@@ -10,6 +10,14 @@
 	}
 }
 
+@media screen and (min-width: 768px) {
+	.portfolio {
+		&__grid {
+			max-width: 768px;
+		}
+	}
+}
+
 @media screen and (min-width: 1024px) {
 	.main__nav {
 		&__list {
