@@ -473,7 +473,10 @@ textarea.no__resize {
 
 @media screen and (min-width: 768px) {
   .portfolio__grid {
-    max-width: 768px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio__item:last-of-type {
+    grid-column: span 2;
   }
 }
 
@@ -606,14 +609,9 @@ textarea.no__resize {
 }
 
 .portfolio__grid {
-  max-width: 425px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 0.2em;
-}
-
-.portfolio__item {
-  grid-column: span 2;
 }
 /*# sourceMappingURL=styles.css.map */

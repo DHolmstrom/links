@@ -1,6 +1,18 @@
 //Albums JSON
 const albums = [
     {
+        Länk: 'https://photos.app.goo.gl/prSL8fiGovArQwQs5',
+        Image: 'img/20220227-KIK-SHF-J18div2-DH5_4526.jpg',
+        Titel: 'Kungälv - Stenugnsund',
+        Info: 'J18 division 2 | 20220227'
+    },
+    {
+        Länk: 'https://photos.app.goo.gl/A4xH75wm8eNnwrcDA',
+        Image: 'img/20220227-BHC-KIK-J18Ettan-DH5_4009.jpg',
+        Titel: 'Bäcken - Kungälv',
+        Info: 'J18Ettan | 20220227'
+    },
+    {
         Länk: 'https://photos.app.goo.gl/e4PYt6y2s8qKYPos8',
         Image: 'img/20220213-KIK-IKO-J18Ettan-DH5_3033.jpg',
         Titel: 'Kungälv - Oskarshamn',

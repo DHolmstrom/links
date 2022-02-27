@@ -13,7 +13,12 @@
 @media screen and (min-width: 768px) {
 	.portfolio {
 		&__grid {
-			max-width: 768px;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		&__item {
+			&:last-of-type {
+				grid-column: span 2;
+			}
 		}
 	}
 }
