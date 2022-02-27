@@ -2,7 +2,7 @@
 const albums = [
     {
         Länk: 'https://photos.app.goo.gl/prSL8fiGovArQwQs5',
-        Image: 'img/20220227-KIK-SHF-J18div2-DH5_4526.jpg',
+        Image: 'img/20220227-KIK-SHF-J18div2-DH5_5116.jpg',
         Titel: 'Kungälv - Stenugnsund',
         Info: 'J18 division 2 | 20220227'
     },
