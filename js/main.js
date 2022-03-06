@@ -113,7 +113,7 @@ if (albumsGrid) {
 
 const links = [
     {
-        Namn: 'Home',
+        Namn: 'Hem',
         Länk: 'home.html'
     },
     {
