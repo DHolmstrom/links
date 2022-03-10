@@ -1,6 +1,12 @@
 //Albums JSON
 const albums = [
     {
+        Länk: 'https://photos.app.goo.gl/QnVot6qdLB4ZWt7u9',
+        Image: 'img/20220310-MAR-KIK-KvalJ18Regional-DH8_6642.jpg',
+        Titel: 'Mariestad - Kungälv',
+        Info: 'Kval till J18 Regional Syd | 20220310'
+    },
+    {
         Länk: 'https://photos.app.goo.gl/prSL8fiGovArQwQs5',
         Image: 'img/20220227-KIK-SHF-J18div2-DH5_5116.jpg',
         Titel: 'Kungälv - Stenugnsund',
