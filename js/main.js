@@ -1,6 +1,12 @@
 //Albums JSON
 const albums = [
     {
+        Länk: 'https://photos.app.goo.gl/46dRrZJjG2fbBbyf7',
+        Image: 'img/20220315-KIK-HHHC-KvalJ18Regional-DH8_6940.jpg',
+        Titel: 'Kungälv - Halmstad',
+        Info: 'Kval till J18 Regional Syd | 20220315'
+    },
+    {
         Länk: 'https://photos.app.goo.gl/QnVot6qdLB4ZWt7u9',
         Image: 'img/20220310-MAR-KIK-KvalJ18Regional-DH8_6642.jpg',
         Titel: 'Mariestad - Kungälv',
