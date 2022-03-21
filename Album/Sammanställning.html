@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album | Dennis Holmström</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__brand">
+            <a class="header__brand__link" href="/">
+                Dennis Holmström
+            </a>
+        </h1>
+        <nav class="main__nav">
+            <ul class="main__nav__list">
+                <li class="main__nav__list__item">
+                    <a href="home.html">
+                        Hem
+                    </a>
+                </li>
+                <li class="main__nav__list__item">
+                    <a href="album.html">
+                        Album
+                    </a>
+                </li>
+                <li class="main__nav__list__item">
+                    <a href="home.html#om">
+                        Om
+                    </a>
+                </li>
+                <li class="main__nav__list__item">
+                    <a href="home.html#kontakt">
+                        Kontakt
+                    </a>
+                </li>
+                <li class="main__nav__list__item">
+                    <a href="Album/Sammanställning.html">
+                        Sammanställning
+                    </a>
+                </li>
+                <!-- <li class="main__nav__list__item">
+                    <button class="btn btn--long">Logga in</button>
+                </li> -->
+            </ul>
+        </nav>
+        <button class="toggle__main__nav">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </button>
+    </header>
+    <main>
+        <section class="albums">
+            <h3 class="section__title">
+                Sammanställning av bilderna från säsongen 2021/2022 
+            </h3>
+            <ul id="sammanstallning">
+                
+            </ul>
+            <script>
+                const ul = document.getElementById("sammanstallning")
+                const sammanstallningarSpelare = [
+                    {
+                        Namn: '#1 Tim Tuvestad',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#6 Hektor Larsson',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#7 Elliot Andersson',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#8 Liam Thorbjörnsson',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#10 Elmer Hall',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#11 Walter Göransson',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#12 Vilgot Blackås',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#14 Hugo Andersson',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#15 Casper Thorbard',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#16 Hugo Hirvi',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#18 Lias Hedin',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#20 Max Österman',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#22 Hampus Schollin',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#23 Elias Brandt',
+                        Länk: 'https://photos.app.goo.gl/RpGCgjoioUZpgiQo7'
+                    },
+                    {
+                        Namn: '#24 Yousef Mohammad',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#25 Max Holmström',
+                        Länk: 'https://photos.app.goo.gl/ZxqecpER9tZXnCja9'
+                    },
+                    {
+                        Namn: '#26 Tim Bergström',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#29 Linus Jonsén',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#35 Eric Lindegren',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#44 Isak Brandt',
+                        Länk: 'https://photos.app.goo.gl/RpGCgjoioUZpgiQo7'
+                    },
+                    {
+                        Namn: '#57 Filip Olofsson',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#88 Pelle Halvordsson',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#89 Anton Kjellberg',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#90 Maximilian Olsson',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#93 Jonathan Lisborg',
+                        Länk: ''
+                    },
+                    {
+                        Namn: '#95 Pontus Ottsjö',
+                        Länk: ''
+                    },
+                    {
+                        Namn: 'Huvud tränare Anton Lycke',
+                        Länk: ''
+                    },
+                    {
+                        Namn: 'Assisterade tränare Dick Andrén',
+                        Länk: ''
+                    },
+                    {
+                        Namn: 'Junior ansvarig Filip Torstensson',
+                        Länk: ''
+                    },
+                    {
+                        Namn: 'Lagledare Andreas Andersson',
+                        Länk: ''
+                    },
+                    {
+                        Namn: 'Materialförvaltare Stefan Jonsén',
+                        Länk: ''
+                    },
+                    {
+                        Namn: 'Materialförvaltare Anders Holmström',
+                        Länk: ''
+                    },
+                    {
+                        Namn: 'Materialförvaltare Niclas Brandt',
+                        Länk: 'https://photos.app.goo.gl/RpGCgjoioUZpgiQo7'
+                    },
+                ]
+                const sammanstallningLag = []
+
+                sammanstallningar.forEach(sammanstallning => {
+                    var li = document.createElement('li')
+                    var a = document.createElement('a')
+
+                    a.innerHTML = sammanstallning.Namn
+                    a.href = sammanstallning.Länk
+                    a.target = '_blank'
+
+                    li.appendChild(a)
+                    ul.appendChild(li)
+                });
+
+
+
+            </script>
+        </section>
+    </main>
+    <footer class="footer"> 
+        <h2 class="footer__title">© Dennis Holmström</h2>
+        <div class="footer__social">
+            <a class="social__link" href="https://www.instagram.com/holmstrom_dennis/">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+            <a class="social__link" href="mailto:dennis@holmstrom.nu">
+                <i class="fas fa-envelope-open"></i>
+            </a>
+        </div>
+        <p class="footer__links">
+            <span class="footer__arr">
+                All Rights Reserved
+            </span>
+            |
+            <a class="footer__terms" href="#">
+                Allmänna vilkor
+            </a>
+        </p>
+    </footer>
+    <div class="info">
+        <p>Denna hemsida är inte helt färdigställd och saker kanske inte fungerar precis som tänkt. Om du hittar ett problem på sidan kan du skicka ett mail till <a href="mailto:dennis@holmstrom.nu?subject=Fel på hemsidan">dennis@holmstrom.nu</a> </p>
+    </div>
+</body>
+</html>
