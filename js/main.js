@@ -149,6 +149,10 @@ const links = [
         Länk: albums[0].Länk
     },
     {
+        Namn: 'Sammanställning',
+        Länk: 'Album/Sammanställning.html'
+    },
+    {
         Namn: 'Instagram',
         Länk: 'https://www.instagram.com/dennisholmstromfoto/'
     },
