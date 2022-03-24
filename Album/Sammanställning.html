@@ -71,7 +71,8 @@
                 </ul>
             </div>
                 <script>
-                const ul = document.getElementById("sammanstallningK")
+                const ulK = document.getElementById("sammanstallningK")
+                const ulE = document.getElementById("sammanstallningE")
                 const sammanstallningarK = [
                     {
                         Namn: 'Lagbilder',
@@ -206,7 +207,12 @@
                         Länk: 'https://photos.app.goo.gl/RpGCgjoioUZpgiQo7'
                     },
                 ]
-                const sammanstallningE = []
+                const sammanstallningarE = [
+                    {
+                        Namn: 'Domare',
+                        Länk: 'https://photos.app.goo.gl/smRXGFuw1ZQvNDz99'
+                    },
+                ]
 
                 sammanstallningarK.forEach(sammanstallning => {
                     var li = document.createElement('li')
@@ -217,7 +223,19 @@
                     a.target = '_blank'
 
                     li.appendChild(a)
-                    ul.appendChild(li)
+                    ulK.appendChild(li)
+                });
+
+                sammanstallningarE.forEach(sammanstallning => {
+                    var li = document.createElement('li')
+                    var a = document.createElement('a')
+
+                    a.innerHTML = sammanstallning.Namn
+                    a.href = sammanstallning.Länk
+                    a.target = '_blank'
+
+                    li.appendChild(a)
+                    ulE.appendChild(li)
                 });
 
 
