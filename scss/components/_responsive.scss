@@ -21,6 +21,11 @@
 			}
 		}
 	}
+	.sammanstallning {
+		max-width: 1080px;
+		margin: 0 auto;
+		display: grid;
+	}
 }
 
 @media screen and (min-width: 1024px) {

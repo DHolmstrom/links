@@ -478,6 +478,11 @@ textarea.no__resize {
   .portfolio__item:last-of-type {
     grid-column: span 2;
   }
+  .sammanstallning {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: grid;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -613,5 +618,21 @@ textarea.no__resize {
   margin: 0 auto;
   display: grid;
   gap: 0.2em;
+}
+
+.sammanstallning h3 {
+  grid-column: span 2;
+}
+
+.sammanstallning h4 {
+  font-size: 2em;
+  margin: 1em 0em;
+}
+
+.sammanstallning ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  font-size: 1.25em;
 }
 /*# sourceMappingURL=styles.css.map */
