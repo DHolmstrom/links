@@ -58,63 +58,72 @@
             <h3 class="section__title">
                 Sammanställning av bilderna från säsongen 2021/2022 
             </h3>
-            <ul id="sammanstallning">
+            <div>
+                <h4>Kungälvs J18 div 1 spelare</h4>
+                <ul id="sammanstallningK">
                 
-            </ul>
-            <script>
-                const ul = document.getElementById("sammanstallning")
-                const sammanstallningarSpelare = [
+                </ul>
+            </div>
+            <div>
+                <h4>Övriga sammanstallningar</h4>
+                <ul id="sammanstallningE">
+                    
+                </ul>
+            </div>
+                <script>
+                const ul = document.getElementById("sammanstallningK")
+                const sammanstallningarK = [
                     {
-                        Namn: '#1 Tim Tuvestad',
-                        Länk: ''
+                        Namn: 'Lagbilder',
+                        Länk: 'https://photos.app.goo.gl/hvdEmoUzoE8pvez8A'
                     },
                     {
-                        Namn: '#6 Hektor Larsson',
-                        Länk: ''
+                        Namn: '#1 Tim Tuvestad',
+                        Länk: 'https://photos.app.goo.gl/hvdEmoUzoE8pvez8A'
                     },
                     {
                         Namn: '#7 Elliot Andersson',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/AcSsQGwzwCnbrYd47'
                     },
                     {
                         Namn: '#8 Liam Thorbjörnsson',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/rgqk6kCGYmiEqE2K8'
                     },
                     {
                         Namn: '#10 Elmer Hall',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/omExBbwJMHJKm5yP7'
                     },
                     {
                         Namn: '#11 Walter Göransson',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/2iDw6nsxyN7Xno8QA'
                     },
                     {
                         Namn: '#12 Vilgot Blackås',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/GxibJKvoz3ezQ4k6A'
                     },
                     {
                         Namn: '#14 Hugo Andersson',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/uRH4eoNKHKiT6jPE7'
                     },
                     {
                         Namn: '#15 Casper Thorbard',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/i6LPMoeqTGDcefvq6'
                     },
                     {
                         Namn: '#16 Hugo Hirvi',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/fhQNVGoGJZs7BKTX6'
                     },
                     {
                         Namn: '#18 Lias Hedin',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/o3qyhT6pF7aZhST88'
                     },
                     {
                         Namn: '#20 Max Österman',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/tZ7QbmxbPXYji1BQ8'
                     },
                     {
                         Namn: '#22 Hampus Schollin',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/HxN5wMZ7e6B7gUL49'
                     },
                     {
                         Namn: '#23 Elias Brandt',
@@ -122,7 +131,7 @@
                     },
                     {
                         Namn: '#24 Yousef Mohammad',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/gJYjZvRbu6dRxV4y7'
                     },
                     {
                         Namn: '#25 Max Holmström',
@@ -130,15 +139,15 @@
                     },
                     {
                         Namn: '#26 Tim Bergström',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/mq1JFMekATkkrAcW7'
                     },
                     {
                         Namn: '#29 Linus Jonsén',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/Yse5gM1aBokUTxut5'
                     },
                     {
                         Namn: '#35 Eric Lindegren',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/3Zk4Rscd35tizzAF7'
                     },
                     {
                         Namn: '#44 Isak Brandt',
@@ -146,60 +155,60 @@
                     },
                     {
                         Namn: '#57 Filip Olofsson',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/bixVVDskzQpT9RSc7'
                     },
                     {
                         Namn: '#88 Pelle Halvordsson',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/wKNU5zKp82CnzM5G7'
                     },
                     {
                         Namn: '#89 Anton Kjellberg',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/Pdf2LBU3yKjFmbJP7'
                     },
                     {
                         Namn: '#90 Maximilian Olsson',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/oLNJJKp443hotLty8'
                     },
                     {
                         Namn: '#93 Jonathan Lisborg',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/VcNyx4c2GrwwuZZ69'
                     },
                     {
                         Namn: '#95 Pontus Ottsjö',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/irBKh4afYs3R4oB36'
                     },
                     {
                         Namn: 'Huvud tränare Anton Lycke',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/S3EH5fvsHJ9T8MjQ9'
                     },
                     {
                         Namn: 'Assisterade tränare Dick Andrén',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/Cb3TyRRTUJCVyH3j9'
                     },
                     {
                         Namn: 'Junior ansvarig Filip Torstensson',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/t9HVzvgGA1kvDrP29'
                     },
                     {
                         Namn: 'Lagledare Andreas Andersson',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/nSBRzPrEww4o1poN7'
                     },
                     {
                         Namn: 'Materialförvaltare Stefan Jonsén',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/Yse5gM1aBokUTxut5'
                     },
                     {
                         Namn: 'Materialförvaltare Anders Holmström',
-                        Länk: ''
+                        Länk: 'https://photos.app.goo.gl/ZxqecpER9tZXnCja9'
                     },
                     {
                         Namn: 'Materialförvaltare Niclas Brandt',
                         Länk: 'https://photos.app.goo.gl/RpGCgjoioUZpgiQo7'
                     },
                 ]
-                const sammanstallningLag = []
+                const sammanstallningE = []
 
-                sammanstallningar.forEach(sammanstallning => {
+                sammanstallningarK.forEach(sammanstallning => {
                     var li = document.createElement('li')
                     var a = document.createElement('a')
 
