@@ -150,7 +150,7 @@ const links = [
     },
     {
         Namn: 'Sammanställning',
-        Länk: 'Album/Sammanställning.html'
+        Länk: 'Album/Sammanstallning.html'
     },
     {
         Namn: 'Instagram',
