@@ -11,7 +11,9 @@
 			content: "";
 			display: block;
 			height: 3px;
-			margin: 1rem 5rem 0;
+			@extend .mt-1;
+			@extend .mr-6;
+			@extend .ml-6;
 			background: $clr-ac-darkred;
 		}
 	}
@@ -21,34 +23,36 @@
 		display: flex;
 		flex-direction: row;
 		gap: 1.25rem;
-		margin: 0.5em auto;
+		@extend .mx-auto;
+		@extend .mt-1;
+		@extend .mb-1;
 		width: fit-content;
 	}
 
 	&__links {
-		padding: 0.5em 0 2em;
+		@extend .mt-1;
+		@extend .mb-2;
 		text-align: center;
 		opacity: 1;
 	}
 
-	&__arr {
-		margin: 0.5em;
-	}
-
+	&__arr,
 	&__terms {
-		margin: 0.5em;
+		@extend .m-1;
 	}
 }
 
 .info {
 	background: $bg-gray;
 	color: $clr-dark;
-	padding: 2rem 2rem 4rem;
+	@extend .pt-2;
+	@extend .pb-4;
+	@extend .pr-2;
+	@extend .pl-2;
 	text-align: center;
 
 	p {
 		opacity: 1;
-		font-size: 1.2rem;
 	}
 
 	a {

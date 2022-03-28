@@ -1,0 +1,93 @@
+$StandardSpacing: 1rem;
+$MarginPaddingSpacings: (
+	"0": $StandardSpacing * 0,
+	"1": $StandardSpacing * 1,
+	"2": $StandardSpacing * 2,
+	"4": $StandardSpacing * 4,
+	"6": $StandardSpacing * 6,
+	"8": $StandardSpacing * 8,
+);
+$MarginPaddingDirections: (
+	"m": margin,
+	"mt": margin-top,
+	"mb": margin-bottom,
+	"mr": margin-right,
+	"ml": margin-left,
+	"p": padding,
+	"pt": padding-top,
+	"pb": padding-bottom,
+	"pr": padding-right,
+	"pl": padding-left,
+	"mx": false,
+	"my": false,
+	"px": false,
+	"py": false,
+);
+@each $DirectionKey, $Directions in $MarginPaddingDirections {
+	@each $SpacingKey, $spacing in $MarginPaddingSpacings {
+		@if $DirectionKey == "mx" {
+			.#{$DirectionKey}-#{$SpacingKey} {
+				margin-top: $spacing;
+				margin-bottom: $spacing;
+			}
+		} @else if $DirectionKey == "my" {
+			.#{$DirectionKey}-#{$SpacingKey} {
+				margin-left: $spacing;
+				margin-right: $spacing;
+			}
+		} @else if $DirectionKey == "px" {
+			.#{$DirectionKey}-#{$SpacingKey} {
+				padding-top: $spacing;
+				padding-bottom: $spacing;
+			}
+		} @else if $DirectionKey == "py" {
+			.#{$DirectionKey}-#{$SpacingKey} {
+				padding-left: $spacing;
+				padding-right: $spacing;
+			}
+		} @else {
+			.#{$DirectionKey}-#{$SpacingKey} {
+				#{$Directions}: $spacing;
+			}
+		}
+	}
+}
+
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.disp-flexcolumnn {
+	display: flex;
+	flex-direction: column;
+}
+.disp-flexcolumnn-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.disp-flexrow {
+	display: flex;
+	flex-direction: row;
+}
+.disp-flexrow-center {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.disp-g {
+	display: grid;
+}
+
+.disp-g-c {
+	display: grid;
+	place-items: center;
+}
+
+.b-0 {
+	border: 0;
+}

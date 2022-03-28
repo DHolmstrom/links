@@ -1,0 +1,11 @@
+.price__table {
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 512px;
+
+	td {
+		padding: 1rem;
+		border: 1px solid $clr-dark;
+		text-align: center;
+	}
+}

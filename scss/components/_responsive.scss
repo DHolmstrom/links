@@ -23,7 +23,8 @@
 	}
 	.sammanstallning {
 		max-width: 1080px;
-		margin: 0 auto;
+		margin-right: auto;
+		margin-left: auto;
 		display: grid;
 	}
 }
@@ -48,12 +49,15 @@
 		grid-template-columns: repeat(2, 1fr);
 
 		&__info {
-			padding: 2rem 0 2rem 4rem;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			padding-left: 4rem;
 			text-align: left;
 		}
 
 		&__img {
-			margin: 0 auto 0 8rem;
+			margin-right: auto;
+			margin-left: 8rem;
 		}
 	}
 }

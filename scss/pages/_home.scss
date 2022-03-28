@@ -2,7 +2,7 @@
 	&__frame {
 		overflow: hidden;
 		width: 90vw;
-		margin: 0 auto;
+		@extend .mx-auto;
 		position: relative;
 	}
 	&__images {

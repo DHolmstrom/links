@@ -16,16 +16,19 @@
 		opacity: 0.75;
 		background: rgba($bg-lightgray, 0.9);
 		box-shadow: $box-shadow;
-		padding: 2rem;
+		@extend .p-2;
 
 		&__title {
 			font-size: 3rem;
-			padding: 1rem 0;
+			@extend .pt-1;
+			@extend .pb-1;
 		}
 
 		&__subtitle {
 			font-size: 2rem;
 			padding: 1rem 0 2rem;
+			@extend .pt-1;
+			@extend .pb-2;
 		}
 	}
 
@@ -35,7 +38,7 @@
 		display: none;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 4rem;
-		margin: 4rem;
+		@extend .m-4;
 		opacity: 0.75;
 		display: none;
 		box-shadow: $box-shadow;
@@ -43,7 +46,7 @@
 
 		&__links {
 			background: $bg-lightgray;
-			padding: 3rem 2rem;
+			@extend .p-4;
 			border: 2px solid #000;
 
 			&__title {
@@ -53,7 +56,8 @@
 			}
 
 			&__info {
-				padding: 1rem 0;
+				@extend .pt-2;
+				@extend .pb-2;
 			}
 		}
 	}

@@ -2,7 +2,7 @@
 	max-width: 750px;
 	width: 75vw;
 	padding: 4rem;
-	margin: 0 auto;
+	@extend .mx-auto;
 	display: flex;
 	flex-direction: column;
 	background-color: rgba($bg-lightgray, 0.5);
